@@ -30,7 +30,11 @@ linelist = content.splitlines()
 
 In the jupyter notebook, you can uncomment the print statements to see what each line of code is accomplishing. 
 
-From there, I made a pretty simple `pandas` dataframe, and I was off to the races. With the help of `matplotlib`, I could essentially plot any correlation I was interested in. Below are some of the visualizations that were interesting to me:
+From there, I made a pretty simple `pandas` dataframe. Here is a preview of what that looked like:
+
+![pandas dataframe](dataframe.png)
+
+With the help of `matplotlib`, I could essentially plot any correlation I was interested in. Below are some of the visualizations that were interesting to me:
 
 ![calories vs. soup in ascending order](calories.png)
 
