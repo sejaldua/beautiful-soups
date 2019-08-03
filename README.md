@@ -8,6 +8,30 @@ Once I read a few Medium articles and got the basic gist of it, I wanted to put 
 
 I quickly found a website that would be ideal for scraping purposes. It had the nutritional breakdown--fats, carbs, proteins, calories, and much more--of 67 soups. Yeah, you best believe I am not going to waste a single second manually entering all that data into a spreadsheet. 
 
-This is what the web table looks like. Feel free to visit the actual site https://www.fatsecret.com/calories-nutrition/food/soup
+Below is what the web table looks like. Feel free to visit the actual site https://www.fatsecret.com/calories-nutrition/food/soup
 
 ![soup website](webpage_photo.png)
+
+The 8 magical lines that let me obtain the soup and all things related to the soup:
+```python
+import requests
+from bs4 import BeautifulSoup
+r = requests.get('https://www.fatsecret.com/calories-nutrition/food/soup')
+c = r.content
+soup = BeautifulSoup(c, "lxml")
+# print(soup)
+main_content = soup.find('div', attrs = {'class': 'leftCellContent'})
+# print(main_content)
+content = main_content.find('tbody').text
+# print(content)
+linelist = content.splitlines()
+# print(linelist)
+```
+
+In the jupyter notebook, you can uncomment the print statements to see what each line of code is accomplishing. 
+
+From there, I made a pretty simple `pandas` dataframe, and I was off to the races. With the help of `matplotlib`, I could essentially plot any correlation I was interested in. Below are some of the visualizations that were interesting to me:
+
+!(calories vs. soup in ascending order)[caloriegraph.png]
+!(soup nutrition breakdown stacked bar graph)[beautifulsoups.png]
+!(pie charts: average nutrition breakdown by soup type)[pie charts.png]
