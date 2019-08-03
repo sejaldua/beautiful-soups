@@ -1,6 +1,6 @@
 # beautiful-soups
 
-Wassup wassup. So you've found my stupid soup project. Before you diss on my stupid soup project, let's give it the respect it deserves. Soup is great. In the ~midsommar~ especially, soup absolutely schmacks sometimes. There's nothing I love more than coming back from my frisbee game and enjoying a nice warm bowl of Progresso's Chicken Noodle soup. I hope you love soup as much as I do!
+Wassup wassup. So you've found my stupid soup project. Before you diss on my stupid soup project, let's give it the respect it deserves. Soup is great. In the \~midsommar\~ especially, soup absolutely schmacks sometimes. There's nothing I love more than coming back from my frisbee game and enjoying a nice warm bowl of Progresso's Chicken Noodle soup. I hope you love soup as much as I do!
 
 No, but I wouldn't just do a personal coding project on soup for the heck of it... that would make me, like, weird. Really, I wanted to dabble into the world of web scraping. After doing a few quick Google searches, I learned that the few most popular Python web scraping libraries are called `Selenium`, `Requests`, `Scrapy`, `lxml`, and `Beautiful Soup 4`. As you can probably imagine, the name "Beautiful Soup 4" caught my attention, so I decided to explore its capabilities. I wanted to learn how web scraping even works. 
 
