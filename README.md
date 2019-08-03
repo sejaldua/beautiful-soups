@@ -10,4 +10,4 @@ I quickly found a website that would be ideal for scraping purposes. It had the 
 
 This is what the web table looks like. Feel free to visit the actual site https://www.fatsecret.com/calories-nutrition/food/soup
 
-!(soup website)[webpage_photo.png]
+![soup website](webpage_photo.png)
