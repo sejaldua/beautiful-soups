@@ -42,3 +42,6 @@ With the help of `matplotlib`, I could essentially plot any correlation I was in
 
 ![pie charts: average nutrition breakdown by soup type](piecharts.png)
 
+While the above graphs provide a great at-a-glance visualization of the dataset, I still felt like I had not learned that much about soups, so I set out to "zoom in" on each individual soup and plot something meaningful about it. My goal was to make some kind of pie chart with as much data as I could incorporate and produce a graph, and then have that graph refresh to display the pie chart for the next soup in the list. I elected to use a nested pie chart. This would allow me to not only plot fats, carbs, and proteins on the pie chart, but I could also plot sugars and fibers within the carb portion of the pie chart. First, I needed to go back to the site and scrape data from two separate urls, but that took less a minute to code up now that I have gotten the hang of how to use `bs4`. To be honest with you, the documentation for `matplotlib` nested pie charts is exceptional; most of my time was spent figuring out how to hide labels and then format my legend. I also spent a lot of time making the color scheme exactly the way I wanted it. Below is the code in action:
+
+![](rapid_fire_soup.gif)
